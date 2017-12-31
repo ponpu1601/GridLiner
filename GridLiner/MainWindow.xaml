@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Canvas x:Name="PictureCanvas">
+            
+            <Canvas x:Name="GridCanvas" Margin="0,0,-0.333,-0.333"></Canvas>
+
+        </Canvas>
         
     </Grid>
 </Window>
