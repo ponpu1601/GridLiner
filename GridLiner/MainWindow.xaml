@@ -6,10 +6,16 @@
         xmlns:local="clr-namespace:GridLiner"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Canvas x:Name="PictureCanvas">
-            
-            <Canvas x:Name="GridCanvas" Margin="0,0,-0.333,-0.333"></Canvas>
+    <Window.DataContext>
+        <local:GridLinerViewModel/>
+    </Window.DataContext>
+        
+<Grid>
+        <Canvas x:Name="PictureCanvas" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="{Binding ImagePath}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Canvas x:Name="GridCanvas" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                
+            </Canvas>
 
         </Canvas>
         

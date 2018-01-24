@@ -23,6 +23,8 @@ namespace GridLiner
         public MainWindow()
         {
             InitializeComponent();
+            //  元画像ソースパスを指定
+            this.DataContext = new GridLinerViewModel("");
         }
     }
 }
